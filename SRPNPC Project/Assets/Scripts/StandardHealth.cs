@@ -36,6 +36,17 @@ public class StandardHealth : MonoBehaviour, IHealth
         if (CurrentHpPct <= 0)
             Die();
     }
+        //if (amount <= 0)
+        //{
+        //    throw new ArgumentOutOfRangeException("Invalid Damage amount specified: " + amount);
+        //}
+
+        //currentHealth -= amount;
+
+        //OnHPPctChanged(CurrentHpPct);
+
+        //if (CurrentHpPct <= 0)
+        //    Die();
 
     private void Die()
     {

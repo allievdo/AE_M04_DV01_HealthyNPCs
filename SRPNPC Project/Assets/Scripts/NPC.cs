@@ -24,7 +24,13 @@ public class NPC : MonoBehaviour
     //{
     //    currentHp = startingHp;
     //}
-
+    public void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(10);
+        }
+    }
     internal void TakeDamage(int amount)
     {
         GetComponent<IHealth>().TakeDamage(amount);
